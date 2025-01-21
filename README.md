@@ -19,7 +19,7 @@ Focusing on this retail example lets consider the following answers.
 {}
 ````  
    
-In some cases we could query the product vector database.  In some cases we its easier just to hit an operational data store. In this example we will go against the operational data store using the fink SQL fedearted seach with an intersect against the llm_answers topic on store and product id to eliminate any store and product_id combination not in the ODS.
+In some cases we could query the product vector database.  In some cases we its easier just to hit an operational data store. In this example we will go against the operational data store using the fink SQL federated seach with an intersect against the llm_answers topic on store and product id to eliminate any store and product_id combination not in the ODS.
    
 ### Implementation Detail
 ![Workflows Genreral Architecture](/files/img/post_processing.png)  
