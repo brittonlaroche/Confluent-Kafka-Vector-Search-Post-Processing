@@ -6,10 +6,11 @@
 ## Workflows Github Description
 This github explores the fourth step in Building a RAG Enabaled Gen AI application.  Post processing is where we decide what to do with the llm answers. We need to validate teh answers returned are true and correct. We can do this in a number of ways, with a custom python consumer / producer or a series of Flink SQL statements.  In this example I will focus on the product recommendations.  We will use flink SQL to query an operational data store to determine if the store and product actually exist.  There are a few Steps to follow:   
 
-   1. We obtain the llm response fromthe kafka topic through flink sql
-   2. 
+   1. We obtain the llm response from the llm_ansers kafka topic through flink sql
+   2. We query the current ODS product and store information where inventory count is greater than zero
+   3. We perform an intersect on the results
+   4. We provide the final answer in llm_answers_processed topic.
  
-
 This github is a continuation of a previous github that showed how to get data from different data sources based on a reasoning agent.  Be sure to check it out as we are using the data generated there and all the way back in step 1 for vector searches in this github example. [Confluent-Kafka-Vector-Search-Workflows](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Workflows)   
    
 Focusing on this retail example lets consider the following answers.
