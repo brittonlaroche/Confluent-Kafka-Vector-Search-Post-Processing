@@ -8,7 +8,7 @@ This github explores the fourth step in Building a RAG Enabaled Gen AI applicati
 
    1. We obtain the llm response from the llm_ansers kafka topic through flink sql
    2. We query the current ODS product and store information where inventory count is greater than zero
-   3. We perform an intersect on the results
+   3. We perform an intersect on the results (Eliminating any product recommendations not actionally in the ODS)
    4. We provide the final answer in llm_answers_processed topic.
  
 This github is a continuation of a previous github that showed how to get data from different data sources based on a reasoning agent.  Be sure to check it out as we are using the data generated there and all the way back in step 1 for vector searches in this github example. [Confluent-Kafka-Vector-Search-Workflows](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Workflows)   
