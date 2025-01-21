@@ -12,7 +12,16 @@ This github explores the fourth step in Building a RAG Enabaled Gen AI applicati
    4. We provide the final answer in llm_answers_processed topic.
  
 This github is a continuation of a previous github that showed how to get data from different data sources based on a reasoning agent.  Be sure to check it out as we are using the data generated there and all the way back in step 1 for vector searches in this github example. [Confluent-Kafka-Vector-Search-Workflows](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Workflows)   
-   
+
+## 4 Steps to Building a GenAI Application
+There are 4 steps to building a GenAI Application and I have included a github for each step.    
+The githubs (some still work in progress) are indexed here:   
+Step 1. Data Augmenatation: [Confluent-Kafka-Vector-Encoding](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Encoding)   
+Step 2. Inference: [Confluent-Kafka-Vector-Search-Prompt-Inference](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Prompt-Inference)   
+Step 3. Workflows: [Confluent-Kafka-Vector-Search-Workflows](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Workflows)   
+Step 4. Post Processing: [Confluent-Kafka-Vector-Search-Post-Processing](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Post-Processing)   
+
+ 
 Focusing on this retail example lets consider the following answers.
 
 ```json
@@ -24,11 +33,4 @@ In some cases we could query the product vector database.  In some cases we its 
 ### Implementation Detail
 ![Workflows Genreral Architecture](/files/img/post_processing.png)  
 
-## 4 Steps to Building a GenAI Application
-There are 4 steps to building a GenAI Application and I have included a github for each step.    
-The githubs (some still work in progress) are indexed here:   
-Step 1. Data Augmenatation: [Confluent-Kafka-Vector-Encoding](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Encoding)   
-Step 2. Inference: [Confluent-Kafka-Vector-Search-Prompt-Inference](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Prompt-Inference)   
-Step 3. Workflows: [Confluent-Kafka-Vector-Search-Workflows](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Workflows)   
-Step 4. Post Processing: [Confluent-Kafka-Vector-Search-Post-Processing](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Post-Processing)   
    
