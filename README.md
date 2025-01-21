@@ -10,7 +10,7 @@ Step 2. Inference: [Confluent-Kafka-Vector-Search-Prompt-Inference](https://gith
 Step 3. Workflows: [Confluent-Kafka-Vector-Search-Workflows](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Workflows)   
 Step 4. Post Processing: [Confluent-Kafka-Vector-Search-Post-Processing](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Post-Processing)   
 
-This github is a continuation of a previous github that showed how to get data from different data sources based on a reasoning agent.  Be sure to check it out as we are using the data generated there and all the way back in step 1 for vector searches in this github example. [Confluent-Kafka-Vector-Search-Workflows](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Workflows)   
+This github is a continuation of the previous Workflows github that showed how to get data from different data sources based on a reasoning agent.  Be sure to check it out as we are using the data generated there and all the way back in step 1 for vector searches in this github example. [Confluent-Kafka-Vector-Search-Workflows](https://github.com/brittonlaroche/Confluent-Kafka-Vector-Search-Workflows)   
    
 ## Post Processing Github Description
 This github explores the fourth step in Building a RAG Enabaled Gen AI application.  Post processing is where we decide what to do with the llm answers. We need to validate teh answers returned are true and correct. We can do this in a number of ways, with a custom python consumer / producer or a series of Flink SQL statements.  In this example I will focus on the product recommendations.  We will use flink SQL to query an operational data store to determine if the store and product actually exist.  There are a few Steps to follow:   
